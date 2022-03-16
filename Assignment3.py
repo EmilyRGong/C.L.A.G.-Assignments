@@ -1,0 +1,7 @@
+money_start = input("What is the amount of money you begun with?")
+saving_years = input("How many years did it take to save to this amount")
+interest_rate = input("What is your interest rate per annum?")
+money_result = ((float(money_start)) * (float(interest_rate)) * (float(saving_years)))
+print(money_result)
+result = bool(money_result > 10000)
+print(result)

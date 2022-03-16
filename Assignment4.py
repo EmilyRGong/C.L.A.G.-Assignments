@@ -1,0 +1,11 @@
+word = input("Palindome Check: Input word:" + " ")
+list_of_letters = list(word)
+list_of_letters2 = list_of_letters[:]
+list_of_letters2.reverse()
+list_2_str = "".join(list_of_letters)
+reverse_list_2_str = "".join(list_of_letters2)
+print("Your word is:" + " " + f"{list_2_str}")
+print("Reversed, it's:" + " " + f"{reverse_list_2_str}")
+print("So...is this word a palindrome?")
+result = bool(list_2_str == reverse_list_2_str)
+print(result)
